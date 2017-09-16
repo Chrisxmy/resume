@@ -15,9 +15,11 @@ var local = true
 		controlArrows:false,
 		continuousVertical: true,
 		afterLoad:function(anchors,index){
-			console.log(index)
 			if(local && index === 2 )
 			circle()
+			if(index === 3) {
+
+			}
 		},
 	});
 
@@ -33,7 +35,7 @@ var percent=0;
         $('.c .circle .left').css("transform","rotate("+(18/5)*percent+"deg)");
         $('.c .num>span').text(percent);  
         percent++;  
-    },10); 
+    }); 
 	local = false
 }
 

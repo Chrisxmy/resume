@@ -6,7 +6,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
-    vendor: ['fullpage.js'],
+    vendor: ['fullpage.js','jquery'],
     app: path.resolve(__dirname, "src",'js',"index.js"),
   },
   output: {
