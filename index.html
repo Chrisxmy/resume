@@ -1,137 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css" />
-	<link rel="stylesheet" href='./index.css'>
-	<link rel='stylesheet' href='./animate.css'>
-	<link rel="stylesheet" href='./reset.css'>
-	<link rel="stylesheet" href="font2/iconfont.css"><link rel="stylesheet" href="font1/iconfont.css">
 </head>
+
 <body>
-	<div id='arrow'><img src='./img/arrow.png'></div>
-<ul id="myMenu">
-	<li data-menuanchor="about" class="active about">
-		 <div class="send">
-             about
-           <div class="arrow"></div>
-        </div>
-		<a href="#about"><span class="icon iconfont">&#xe607;</span></a>
-	</li>
-	<li data-menuanchor="skills" class='skills'>
-		<div class="send">
-             skills
-           <div class="arrow"></div>
-        </div>
-		<a href="#skills"><span class="icon iconfont">&#xe631;</span></a></li>
-	<li data-menuanchor="item" class='item'>
-		<div class="send">
-             item
-           <div class="arrow"></div>
-        </div>
-		<a href="#item"><span class="icon iconfont">&#xe62f;</span></a></li>
-	<li data-menuanchor="contact" class='contact'>
-		<div class="send">
-             contact
-           <div class="arrow"></div>
-        </div>
-		<a href="#contact"><span class="icon iconfont">&#xe630;</span></a></li>
-</ul>
+	<div id='arrow'><img src="./src/img/arrow.png"></div>
+	<ul id="myMenu">
+		<li data-menuanchor="about" class="active about">
+			<div class="send">
+				about
+				<div class="arrow"></div>
+			</div>
+			<a href="#about"><span class="icon iconfont icon-touxiang"></span></a>
+		</li>
+		<li data-menuanchor="skills" class='skills'>
+			<div class="send">
+				skills
+				<div class="arrow"></div>
+			</div>
+			<a href="#skills"><span class="icon iconfont icon-jineng-copy"></span></a></li>
+		<li data-menuanchor="item" class='item'>
+			<div class="send">
+				item
+				<div class="arrow"></div>
+			</div>
+			<a href="#item"><span class="icon iconfont icon-xiangmu"></span></a></li>
+		<li data-menuanchor="contact" class='contact'>
+			<div class="send">
+				contact
+				<div class="arrow"></div>
+			</div>
+			<a href="#contact"><span class="icon iconfont icon-lianxi"></span></a></li>
+	</ul>
 	<div id="fullpage">
-	<div class="section about">		
-		<div class="container demo" position='absolute'>
-			<div class="content">
-                <div id="large-header" class="large-header">
-                    <canvas id="demo-canvas"></canvas>
-                </div>
-               
-            </div>
-		</div><!-- /container --> 
-		<div class='wrap'>
-         <div class='photo'><img src='./img/photo.jpg'></div>
-		 <h2 class='name'>谢梦扬</h2>
-		 <div class='line'></div>
-		 <div class='intro'>
-		 <p class='item1'>xxxxxxxxxxxxxxxxxxx</p>
-		 <p class='item2'>xxxxxxxxxxxxxxxxxxx</p>
-		 <p class='item3'>xxxxxxxxxxxxxxxxxxx</p>
-		 </div>
-		 </div>
+		<div class="section about">
+			<div class="container demo" position='absolute'>
+				<div class="content">
+					<div id="large-header" class="large-header">
+						<canvas id="demo-canvas"></canvas>
+					</div>
+
+				</div>
+			</div>
+			<!-- /container -->
+			<div class='wrap'>
+				<div class='photo'><img src='./src/img/photo.jpg'></div>
+				<h2 class='name'>谢梦扬</h2>
+				<div class='line'></div>
+				<div class='intro'>
+					<p class='item1'>手机13914003074</p>
+					<p class='item2'>邮箱438522434@qq.com</p>
+					<p class='item3'><span class='iconfont icon-github'></span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section item">
+			技能
+			<div class='wrap'>
+				<div class="c">
+					<div class="circle">
+						<div class="percent left"></div>
+						<div class="percent right wth0"></div>
+					</div>
+					<div class="num"><span>0</span>%</div>
+					<span class='name'>HTML&HTML5</span>
+				</div>
+				<div class="c">
+					<div class="circle">
+						<div class="percent left"></div>
+						<div class="percent right wth0"></div>
+					</div>
+					<div class="num"><span>0</span>%</div>
+					<span class='name'>CSS&CSS3</span>
+				</div>
+				<div class="c">
+					<div class="circle">
+						<div class="percent left"></div>
+						<div class="percent right wth0"></div>
+					</div>
+					<div class="num"><span>0</span>%</div>
+					<span class='name'>JavaScript</span>
+				</div>
+				<div class="c">
+					<div class="circle">
+						<div class="percent left"></div>
+						<div class="percent right wth0"></div>
+					</div>
+					<div class="num"><span>0</span>%</div>
+					<span class='name'>jQuery</span>
+				</div>
+				<div class="c">
+					<div class="circle">
+						<div class="percent left"></div>
+						<div class="percent right wth0"></div>
+					</div>
+					<div class="num"><span>0</span>%</div>
+					<span class='name'>Vue</span>
+				</div>
+			</div>
+			<ul class='skill'>
+				<li><span>1.熟悉HTML,CSS,对W3C标准和标签语义化有一定理解，掌握常见的布局方式.自适应&响应式开发</span></li>
+				<li><span>2.熟悉HTML5&CSS3等新特性</span></li>
+				<li><span>3.对原生JaveScript有持续深入理解，掌握面向对象的编程思想,能手写组件</span></li>
+				<li><span>4.熟悉jQuery,Ajax等前端常见工具库</span></li>
+				<li><span>5.熟悉es6/7新特性，MV*框架Vue.js, sass，有相关项目经验</span></li>
+				<li><span>6.熟悉前端模块化，工程化，熟悉npm webpack 等前端构建工具,对前端性能优化有一定理解</span></li>
+				<li><span>7.熟悉http&https协议</span></li>
+				<li><span>8.了解node.js express，mongodb,简易的CURD</span></li>
+			</ul>
+		</div>
+
+		<div class="section skills">
+			写的一些小项目
+			<ul class='clear'>
+				<li>
+					<a href='https://github.com/Chrisxmy/mall' target=_blank><img src='./src/img/02.jpg'></img>
+				 <div class="box center"> 
+                   <span>一个论坛网站</span>
+		         </div>
+		          </a>
+				</li>
+				<li>
+					<a href='https://github.com/Chrisxmy/mall' target=_blank><img src='./src/img/04.jpg'></img>
+				 <div class="box center"> 
+                   <span >简易电商网站</span>
+		         </div>
+		   </a>
+				</li>
+				<li>
+					<a href='https://github.com/Chrisxmy/mall' target=_blank><img src='./src/img/07.jpg'></img>
+				 <div class="box center"> 
+                   <span >组件系列</span>
+		         </div>
+		   </a>
+				</li>
+				<li>
+					<a href='https://github.com/Chrisxmy/mall' target=_blank><img src='./src/img/08.jpg'></img>
+				 <div class="box center"> 
+                   <span >页面</span>
+		         </div>
+		   </a>
+				</li>
+			</ul>
+		</div>
+		<div class="section contact">
+			工作经历
+			<div class="slide" data-anchor="slide1">
+				<p>工作时间：2017-03 2017-08</p>
+				<p>主要项目:负责移动警务平台webapp前端业务部分开发，技术栈涉及vue.js全家桶 es6语法 webpack scss等。及一些公司后台页面开发</p>
+				</div>
+			<div class="slide" data-anchor="slide2"> Slide 2 </div>
+			<div class="slide" data-anchor="slide3"> Slide 3 </div>
+			<div class="slide" data-anchor="slide4"> Slide 4 </div>
+		</div>
 	</div>
-	
-	<div class="section item"></div>
-	<div class="section skills">
-		<div class="slide" data-anchor="slide1"> Slide 1 </div>
-	    <div class="slide" data-anchor="slide2"> Slide 2 </div>
-	    <div class="slide" data-anchor="slide3"> Slide 3 </div>
-	    <div class="slide" data-anchor="slide4"> Slide 4 </div></div>
-	<div class="section contact">Some section</div>
-</div>
 
 
 
-	<script src='./jquery.min.js'></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
-	<script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/demo.js"></script> 
 
-<script>
-$(document).ready(function() {
+	<script>
 
-	$('#fullpage').fullpage({
-		resize:true,
-		anchors:['about','skills','item','contact'],
-		loopHorizontal:false,
-		fixedElements:'#arrow',
-		menu:'#myMenu',
-		//navigation:true,
-		//navigationTooltips:['about','skills','item','contact'],
-		slidesNavigation:true,
-		controlArrows:false,
-	});
-
-
-function myMenu(){
-	var $myMenu = $('#myMenu li')
-	 $myMenu.on('mouseenter',function(){
-	   $(this).children().eq(0).fadeIn('fast','linear')
-})
-      $myMenu.on('mouseleave',function(){
-	   $(this).children().eq(0).fadeOut()
-})
-}
-myMenu()
-
-
-function arrow(){
-   $('#arrow img').animate({bottom:'10px'})
-                   .fadeOut()
-				   .animate({bottom:'0'})
-				   .fadeIn()
-}
-setInterval(arrow,500)
-
-
-
- var $line = $('.about .line')
- var $intro = $('.about .intro p')
- $line.animate({width:'60%'},1500,function(){   
-	    $('.about .name').addClass('nameAnimate')     
-	    textLeft()
- })
-
- function textLeft(){
-        $intro.eq(0).animate({right:'50%',opacity:1},200)
-        $intro.eq(1).animate({right:'50%',opacity:1},400)
-        $intro.eq(2).animate({right:'50%',opacity:1},500)	
- }
-
-
-
-})
-
-</script>
+	</script>
 </body>
+
 </html>
