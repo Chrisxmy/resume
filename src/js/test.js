@@ -54,7 +54,7 @@ function arrow(){
 				   .animate({bottom:'0'})
 				   .fadeIn()
 }
-let timer =setInterval(arrow,500)
+var timer =setInterval(arrow,500)
 
 
 
