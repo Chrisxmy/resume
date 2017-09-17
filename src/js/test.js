@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
 var local = true
 	$('#fullpage').fullpage({
 		anchors:['about','skills','item','contact'],
@@ -63,5 +63,5 @@ myMenu()
  })
 
 
-})
+
 
