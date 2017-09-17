@@ -4,10 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 </head>
 
 <body>
-	<div id='arrow'><img src="./src/img/arrow.png"></div>
+	<div id='arrow'><a href='https://github.com/Chrisxmy' target=_blank><img src="./src/img/arrow.png"></div>
 	<ul id="myMenu">
 		<li data-menuanchor="about" class="active about">
 			<div class="send">
@@ -40,7 +41,6 @@
 			<div class="container demo" position='absolute'>
 				<div class="content">
 					<div id="large-header" class="large-header">
-						<canvas id="demo-canvas"></canvas>
 					</div>
 
 				</div>
@@ -51,9 +51,9 @@
 				<h2 class='name'>谢梦扬</h2>
 				<div class='line'></div>
 				<div class='intro'>
-					<p class='item1'>手机13914003074</p>
-					<p class='item2'>邮箱438522434@qq.com</p>
 					<p class='item3'><span class='iconfont icon-github'></span></p>
+					<p class='item1'>手机: 13914003074</p>
+					<p class='item2'>邮箱: 438522434@qq.com</p>			
 				</div>
 			</div>
 		</div>
@@ -118,7 +118,7 @@
 			写的一些小项目
 			<ul class='clear'>
 				<li>
-					<a href='https://github.com/Chrisxmy/mall' target=_blank><img src='./src/img/02.jpg'></img>
+					<a href='https://github.com/Chrisxmy/cnodeF' target=_blank><img src='./src/img/02.jpg'></img>
 				 <div class="box center"> 
                    <span>一个论坛网站</span>
 		         </div>
@@ -132,27 +132,37 @@
 		   </a>
 				</li>
 				<li>
-					<a href='https://github.com/Chrisxmy/mall' target=_blank><img src='./src/img/07.jpg'></img>
+					<a href='https://github.com/Chrisxmy/wheels-by-ES6' target=_blank><img src='./src/img/07.jpg'></img>
 				 <div class="box center"> 
                    <span >组件系列</span>
 		         </div>
 		   </a>
 				</li>
 				<li>
-					<a href='https://github.com/Chrisxmy/mall' target=_blank><img src='./src/img/08.jpg'></img>
+					<a href='https://github.com/Chrisxmy/easy-express' target=_blank><img src='./src/img/08.jpg'></img>
 				 <div class="box center"> 
-                   <span >页面</span>
+                   <span >简易的express服务器</span>
 		         </div>
 		   </a>
 				</li>
+				<li>
+					<a href='http://xiemengyang.site/%E5%93%8D%E5%BA%94%E5%BC%8F%E9%A1%B5%E9%9D%A2/src/' target=_blank><img src='./src/img/08.jpg'></img>
+				 <div class="box center"> 
+                   <span >一个响应式页面</span>
+		         </div>
+		   </a>
+				</li>
+				
 			</ul>
 		</div>
 		<div class="section contact">
 			工作经历
 			<div class="slide" data-anchor="slide1">
-				<p>工作时间：2017-03 2017-08</p>
-				<p>主要项目:负责移动警务平台webapp前端业务部分开发，技术栈涉及vue.js全家桶 es6语法 webpack scss等。及一些公司后台页面开发</p>
+				<div class='wrap'>
+					<p>工作时间：2017-03 2017-08</br>
+					主要项目:负责移动警务平台webapp(安卓客户端，微信端)前端业务部分开发，技术栈涉及vue.js全家桶 es6语法 webpack scss等。及一些公司后台页面开发</p>
 				</div>
+			</div>
 			<div class="slide" data-anchor="slide2"> Slide 2 </div>
 			<div class="slide" data-anchor="slide3"> Slide 3 </div>
 			<div class="slide" data-anchor="slide4"> Slide 4 </div>
@@ -163,6 +173,16 @@
 
 
 	<script>
+
+(function () {
+            window.addEventListener('orientation' in window ? "deviceorientation" : "resize", setRem)
+            function setRem() {
+                var html = document.documentElement;
+                var width = html.clientWidth;
+                html.style.fontSize = width / 108 + 'px'
+            }
+            setRem();
+     })()
 
 	</script>
 </body>

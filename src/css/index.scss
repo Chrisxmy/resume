@@ -1,11 +1,23 @@
-body,
-html {
-  font-size: 62.5%;
-}
+@import "./reset.scss";
+@import "./fullpage.scss";
 
 #fullpage .about {
   text-align: center;
   color: #fff;
+}
+#arrow{
+  animation: arrow 1.2s infinite linear;
+}
+
+@keyframes arrow {
+  0%{
+    transform: translateY(0px);
+    opacity: 0;
+  }
+   100%{
+    transform: translateY(-16px);
+    opacity: 1;
+  }
 }
 .about .wrap {
   margin-top: -10%;
@@ -22,9 +34,9 @@ html {
   }
 }
 .about .name {
-  margin: 20px;
+  margin: 2rem;
   font-family: cursive, "Lato", sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   visibility: hidden;
 }
 .about .nameAnimate {
@@ -40,11 +52,16 @@ html {
 }
 .about .intro {
   position: relative;
-  top: 40px;
+  top: 60px;
 }
 .about .intro p {
   opacity: 0;
+  font-size: 2rem;
+  line-height: 2.5rem;
   position: relative;
+  &:first-child span{
+      font-size: 3rem;
+  }
 }
 
 .about .photo img {
@@ -66,7 +83,7 @@ html {
 }
 
 .demo .large-header {
-  background: cadetblue;
+  background: #22c3aa;
 }
 
 .main-title {
@@ -197,6 +214,8 @@ html {
 
 .item {
   text-align: center;
+  font-size:1.5rem;
+  line-height: 2rem;
   .wrap {
     display: flex;
     justify-content: space-around;
@@ -265,14 +284,15 @@ html {
   .skill {
     width: 80%;
     word-break: break-all;
-    margin: 40px auto;
+    margin: 4rem auto;
     text-align: left;
   }
 }
 
 .skills {
+  font-size: 2rem;
   ul {
-    padding-top: 50px;
+    padding-top: 4rem;
     margin: 0 auto;
     width:90%;
     li {
@@ -363,14 +383,18 @@ html {
 
 .contact{
   text-align: center;
-  p{
-    width: 60%;
-    margin: 0 auto;
-    text-align: left;
-  }
+  font-size:2rem;
+  .wrap{
+    border:1px solid #333;
+    box-shadow: 0px 0px 3px inset;
+    border-radius: 8px;
+    background: #fff;
+    height:100px;
+    width:60%;
+    margin: -15rem auto auto auto;
+    text-align: center;
+    }
 }
 
 @import "./animate.scss";
-@import "./reset.scss";
-@import "./fullpage.scss";
 @import "./iconfont.scss";

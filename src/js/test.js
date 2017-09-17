@@ -1,12 +1,12 @@
 $(document).ready(function() {
 var local = true
 	$('#fullpage').fullpage({
-		resize:true,
 		anchors:['about','skills','item','contact'],
 		loopHorizontal:false,
 		fixedElements:'#arrow',
 		menu:'#myMenu',
-		verticalCentered:true,
+		// verticalCentered:true,
+		scrollingSpeed:500,
 		//navigation:true,
 		//navigationTooltips:['about','skills','item','contact'],
 		css3:true,
@@ -50,26 +50,18 @@ function myMenu(){
 }
 myMenu()
 
-function arrow(){
-   $('#arrow img').animate({bottom:'10px'})
-                   .fadeOut()
-				   .animate({bottom:'0'})
-				   .fadeIn()
-}
-var timer =setInterval(arrow,500)
-
 
 
  var $line = $('.about .line')
  var $intro = $('.about .intro p')
- $line.animate({width:'60%'},1200,function(){   
+ $line.animate({width:'60%'},800,function(){   
 	    $('.about .name').addClass('nameAnimate')     
 	    $intro.animate({
 			opacity:1,
-			top:'-15px'
-		},1000)
+			top:'-30px'
+		},600)
  })
 
 
-
 })
+
