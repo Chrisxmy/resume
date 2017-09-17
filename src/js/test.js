@@ -25,7 +25,7 @@ var local = true
 
 function circle(){
 var percent=0;
-    var loading=setInterval(function(){  
+    let loading=setInterval(function(){  
         if(percent > 80){  
            return 
         }else if(percent>50){  
