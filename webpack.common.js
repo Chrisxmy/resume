@@ -7,7 +7,7 @@ const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
-    vendor: ["fullpage.js", "jquery"],
+    vendor: ["fullpage.js"],
     app: path.resolve(__dirname, "src", "js", "index.js")
   },
   output: {
