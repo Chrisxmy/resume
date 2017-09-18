@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCSSPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -21,24 +21,6 @@ module.exports = {
     publicPath: "/",
     disableHostCheck: true
   },
-  plugins: [
-    new CleanWebpackPlugin(["dist"]),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor",
-      chunks: ["app", "vendor"],
-      minChunks: 2
-    }),
-    new ExtractTextPlugin("css/[name].[hash].css"),
-     new OptimizeCSSPlugin(), 
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "index.html"),
-      chunks: ["app", "vendor"]
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jquery: "jquery"
-    })
-  ],
   module: {
     rules: [
       {
@@ -63,7 +45,7 @@ module.exports = {
         test: /\.(css||scss)$/,
         loader: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: ["css-loader", "sass-loader", "postcss-loader"],
+          use: [ 'css-loader',  "postcss-loader","sass-loader",],
           publicPath: path.resolve(__dirname, "dist", "css")
         }),
         include: path.resolve(__dirname, "src/css")
@@ -86,6 +68,24 @@ module.exports = {
           name: "fonts/[name].[hash].[ext]"
         }
       }
-    ]
-  }
+    ],
+  },
+  plugins: [
+    new CleanWebpackPlugin(["dist"]),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "vendor",
+      chunks: ["app", "vendor"],
+      minChunks: 2
+    }),
+    new ExtractTextPlugin("css/[name].[hash].css"),
+    //  new OptimizeCSSPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "index.html"),
+      chunks: ["app", "vendor"]
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jquery: "jquery"
+    })
+  ]
 };
