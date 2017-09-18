@@ -17,8 +17,7 @@ var local = true
 		afterLoad:function(anchors,index){
 			if(local && index === 2 )
 			circle()
-			if(index === 3) {
-
+			if(index === 2) {
 			}
 		},
 	});
