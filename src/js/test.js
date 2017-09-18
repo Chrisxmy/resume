@@ -15,11 +15,13 @@ var local = true
 		controlArrows:false,
 		continuousVertical: true,
 		afterLoad:function(anchors,index){
-			if(local && index === 2 )
-			circle()
-			if(index === 2) {
+			if(local && index === 2 ){
+   	              circle() 	
 			}
 		},
+		onLeave:function(anchors,index){
+			
+		}
 	});
 
 function circle(){

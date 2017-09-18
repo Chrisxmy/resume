@@ -61,6 +61,7 @@
   position: relative;
   &:first-child span{
       font-size: 3rem;
+      color: #fff;
   }
 }
 
@@ -165,10 +166,11 @@
 }
 #myMenu .active a {
   transform: scale(1.4);
+  transition: 0.3s;
 }
 #myMenu a:hover {
   transform: scale(1.4);
-  transition: 0.3s;
+   transition: 0.3s;
 }
 #myMenu .about,
 #myMenu .skills,
@@ -286,6 +288,7 @@
     word-break: break-all;
     margin: 4rem auto;
     text-align: left;
+    color:#eee;
   }
 }
 
@@ -400,6 +403,18 @@
       display: inline-block;
     }
 }
+}
+#mask{
+  position: absolute;
+  left: 0;
+  right:0;
+  bottom:0;
+  top:0;
+  opacity: 1;
+  transition: .5s;
+  z-index: 9999;
+  background: #FFFF00;
+  transform: translateY(100%)
 }
 
 @import "./animate.scss";
