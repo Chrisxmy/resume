@@ -1,5 +1,7 @@
 
-var local = true
+		
+	
+	var local = true
 	$('#fullpage').fullpage({
 		anchors:['about','skills','item','contact'],
 		loopHorizontal:false,
@@ -63,6 +65,12 @@ myMenu()
 		},600)
  })
 
+
+document.onreadystatechange = function(){
+	if(document.readyState === 'complete') {
+         $('#loading').fadeOut()
+	}
+}
 
 
 
