@@ -348,7 +348,7 @@ html.fp-enabled,
 .about .name {
   margin: 2rem;
   font-family: cursive, "Lato", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   visibility: hidden; }
 
 .about .nameAnimate {
@@ -708,7 +708,7 @@ html.fp-enabled,
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100; }
+  z-index: 99999; }
   #loading .lds-ripple {
     position: absolute;
     width: 200px;
@@ -761,6 +761,14 @@ html.fp-enabled,
     width: 156px;
     height: 156px;
     opacity: 0; } }
+
+#change {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 999;
+  font-size: 1.5rem;
+  cursor: pointer; }
 
 @-webkit-keyframes bounce-in-top {
   0% {
@@ -880,4 +888,4 @@ html.fp-enabled,
 .icon-jianshu:before {
   content: "\E8CF"; }
 
-/*# sourceMappingURL=app.04d4e0075940fbdfe6c7.css.map*/
+/*# sourceMappingURL=app.80e97e9bc2ad43fde1f6.css.map*/
